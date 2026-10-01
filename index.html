@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beta App Testing</title>
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="logo">BETA</div>
+
+            <h1>Join Our Beta Test</h1>
+
+            <p class="description">
+                Be one of the first people to test our new app.
+                Register below and we'll contact you with more
+                information about the beta testing program.
+            </p>
+
+            <form
+    id="betaForm"
+    action="https://formsubmit.co/gregshllnd@gmail.com"
+    method="POST"
+>
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="New Beta Tester Registration"
+                >
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="false"
+                >
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table"
+                >
+
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+                <button type="submit" id="submitButton">
+                    Join Beta Testing
+                </button>
+
+            </>
+
+            <p id="message"></p>
+
+            <p class="privacy">
+                Your information will only be used to contact you
+                about the beta testing program.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+  </html>
